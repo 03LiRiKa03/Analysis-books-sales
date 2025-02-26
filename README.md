@@ -31,6 +31,17 @@ The `avg_price_genre.sql` file calculates the average book prices by genre, usin
 ### Description
 The `top_units_sold_genre.sql` file calculates the total number of books sold by genre, using cleaned_genre for grouping. The data includes variations such as "genre fiction" and "fiction," so I applied a cleaning function to unify them. The total sales are calculated using the SUM function on the units_sold column, which provides insights into the popularity of different genres. The results are ordered in ascending order of total units sold.
 
+ ## 6. Top 5 authors by number of books sold.
+* Stephen King	278322
+* Janet Evanovich	181089
+* Lemony Snicket, Brett Helquist	158973
+* Jim Butcher	145827
+* Robert Jordan	133512
+### Description
+The `top_authors_units_sold.sql` file retrieves the top 5 authors by the total number of books sold, using SUM(units_sold) as the primary criterion. This query groups the results by author, allowing for the aggregation of sales across multiple books. The authors are then sorted in descending order based on total units sold, ensuring that the selection highlights those authors with the highest sales figures. This approach provides insight into the most successful authors in terms of book sales.
+
+
+
   
 
 
