@@ -18,27 +18,39 @@ The `most_books_published_years.sql` file contains an SQL query designed to dete
 The `books_rating.sql` retrieves the top 10 highest-rated books, using book_average_rating as the primary criterion. If multiple books have the same rating, they are sorted by book_ratings_count to prioritize those with more reviews. This ensures that the selection includes not only the highest-rated but also the most reliably rated books.
 
  ## 4. What is the average book price by genre?
-* fiction	4.7
-* nonfiction	5.5
-* children	6.1
+* Fiction:	4.7
+* Nonfiction:	5.5
+* Children:	6.1
 ### Description
 The `avg_price_genre.sql` file calculates the average book prices by genre, using cleaned_genre for grouping. The data includes both "genre fiction" and "fiction," so I applied a cleaning function to combine them. The average price is taken from the sale_price column, which helps understand pricing trends across genres.
 
  ## 5. Which genres have the highest number of books sold?
-* fiction	8421492
-* nonfiction	1634759
-* children	298118
+* Fiction:	8421492
+* Nonfiction:	1634759
+* Children:	298118
 ### Description
 The `top_units_sold_genre.sql` file calculates the total number of books sold by genre, using cleaned_genre for grouping. The data includes variations such as "genre fiction" and "fiction," so I applied a cleaning function to unify them. The total sales are calculated using the SUM function on the units_sold column, which provides insights into the popularity of different genres. The results are ordered in ascending order of total units sold.
 
  ## 6. Top 5 authors by number of books sold.
-* Stephen King	278322
-* Janet Evanovich	181089
-* Lemony Snicket, Brett Helquist	158973
-* Jim Butcher	145827
-* Robert Jordan	133512
+* Stephen King:	278322
+* Janet Evanovich:	181089
+* Lemony Snicket, Brett Helquist:	158973
+* Jim Butcher:	145827
+* Robert Jordan:	133512
 ### Description
 The `top_authors_units_sold.sql` file retrieves the top 5 authors by the total number of books sold, using SUM(units_sold) as the primary criterion. This query groups the results by author, allowing for the aggregation of sales across multiple books. The authors are then sorted in descending order based on total units sold, ensuring that the selection highlights those authors with the highest sales figures. This approach provides insight into the most successful authors in terms of book sales.
+
+ ## 7. What is the total publisher revenue by genre?
+* Amazon Digital: High sales in fiction and children.
+* Hachette: Strong sales in fiction.
+* HarperCollins: Significant sales in fiction and nonfiction.
+* Macmillan: Good sales in fiction.
+* Penguin Group: Highest sales in fiction and nonfiction.
+* Random House: High sales in fiction.
+* Simon and Schuster: Strong sales in fiction and nonfiction.
+### Description
+The `publisher_genre_revenue.sql` file retrieves the total revenue of publishers across different genres. The genre column contains values like "genre fiction" and "fiction," which are identical. To address this issue, the code removes the "genre" part. The revenue is rounded for improved readability. The results are grouped by publisher and cleaned_genre, and then sorted by publisher and cleaned_genre. 
+
 
 
 
