@@ -23,3 +23,18 @@ The `books_rating.sql` retrieves the top 10 highest-rated books, using book_aver
 * children	6.1
 ### Description
 The `avg_price_genre.sql` file calculates the average book prices by genre, using cleaned_genre for grouping. The data includes both "genre fiction" and "fiction," so I applied a cleaning function to combine them. The average price is taken from the sale_price column, which helps understand pricing trends across genres.
+
+ ## 5. Which genres have the highest number of books sold?
+* fiction	8421492
+* nonfiction	1634759
+* children	298118
+### Description
+The `top_units_sold_genre.sql` file calculates the total number of books sold by genre, using cleaned_genre for grouping. The data includes variations such as "genre fiction" and "fiction," so I applied a cleaning function to unify them. The total sales are calculated using the SUM function on the units_sold column, which provides insights into the popularity of different genres. The results are ordered in ascending order of total units sold.
+
+  
+
+
+
+
+
+
