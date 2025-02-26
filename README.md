@@ -16,3 +16,10 @@ The `most_books_published_years.sql` file contains an SQL query designed to dete
 * "Calvin and Hobbes": 4.61 (117,788 ratings)
 ### Description
 The `books_rating.sql` retrieves the top 10 highest-rated books, using book_average_rating as the primary criterion. If multiple books have the same rating, they are sorted by book_ratings_count to prioritize those with more reviews. This ensures that the selection includes not only the highest-rated but also the most reliably rated books.
+
+ ## 4. What is the average book price by genre?
+* fiction	4.7
+* nonfiction	5.5
+* children	6.1
+### Description
+The `avg_price_genre.sql` file calculates the average book prices by genre, using cleaned_genre for grouping. The data includes both "genre fiction" and "fiction," so I applied a cleaning function to combine them. The average price is taken from the sale_price column, which helps understand pricing trends across genres.
