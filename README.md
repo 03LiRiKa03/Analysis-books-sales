@@ -7,3 +7,12 @@ The `top_publisher.sql` file contains an SQL query designed to analyze the numbe
  * The most books were published in 2012 (68 books), followed by 2011 (55) and 2009 (46) years.
 ### Description
 The `most_books_published_years.sql` file contains an SQL query designed to determine the years with the highest number of books published in the dataset. The query counts the total number of book titles published in each year, groups the results by the publishing year, and orders the output in descending order based on the count of published books.
+
+ ## 3. Which books received the highest rating (top 10)?
+* "Words of Radiance": 4.77 (73,572 ratings)
+* "A Court of Mist and Fury": 4.72 (108,384 ratings)
+* "Essential Calvin & Hobbes": 4.65 (93,001 ratings)
+* "The Way of Kings": 4.64 (144,822 ratings)
+* "Calvin and Hobbes": 4.61 (117,788 ratings)
+### Description
+The `books_rating.sql` retrieves the top 10 highest-rated books, using book_average_rating as the primary criterion. If multiple books have the same rating, they are sorted by book_ratings_count to prioritize those with more reviews. This ensures that the selection includes not only the highest-rated but also the most reliably rated books.
