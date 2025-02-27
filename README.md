@@ -62,7 +62,10 @@ The `publisher_genre_revenue.sql` file retrieves the total revenue of publishers
 * Penguin Group: 8.6
 ### Description
 The `avg_price_publisher` file contains a SQL query that calculates the average sales price of books for each publisher, rounds the result to two decimal places, and sorts the results in ascending order by average price.
-
+ ## 9. How is the book rating correlated with its sales position?
+* Correlation between book ratings and sales rank: -0.02021720566106124
+### Description
+The `corr.py` file imports the necessary libraries for analysis and establishes a connection to the database via db_connection. It includes a condition to check whether the data retrieval was successful. The script then calculates the correlation and visualizes the results.
 
 
   
