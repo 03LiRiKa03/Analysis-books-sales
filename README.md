@@ -41,17 +41,25 @@ The `top_units_sold_genre.sql` file calculates the total number of books sold by
 The `top_authors_units_sold.sql` file retrieves the top 5 authors by the total number of books sold, using SUM(units_sold) as the primary criterion. This query groups the results by author, allowing for the aggregation of sales across multiple books. The authors are then sorted in descending order based on total units sold, ensuring that the selection highlights those authors with the highest sales figures. This approach provides insight into the most successful authors in terms of book sales.
 
  ## 7. What is the total publisher revenue by genre?
-* Amazon Digital: High sales in fiction and children.
-* Hachette: Strong sales in fiction.
-* HarperCollins: Significant sales in fiction and nonfiction.
-* Macmillan: Good sales in fiction.
-* Penguin Group: Highest sales in fiction and nonfiction.
-* Random House: High sales in fiction.
-* Simon and Schuster: Strong sales in fiction and nonfiction.
+* Penguin Group: has the highest sales in fiction.
+* Amazon Digital: demonstrates significant volumes in both fiction and nonfiction.
+* Hachette Book: holds strong positions in both genres.
+* HarperCollins Publishers also has high sales in fiction, while HarperCollins Christian focuses on nonfiction.
+* Macmillan and Random House show stable sales across all genres.
+
 ### Description
 The `publisher_genre_revenue.sql` file retrieves the total revenue of publishers across different genres. The genre column contains values like "genre fiction" and "fiction," which are identical. To address this issue, the code removes the "genre" part. The revenue is rounded for improved readability. The results are grouped by publisher and cleaned_genre, and then sorted by publisher and cleaned_genre. 
 
  ## 8. Comparison of average book prices between different publishers.
+* Amazon Digital: 3.2
+* HarperCollins Christian Publishing: 5.2
+* Macmillan: 5.4
+* HarperCollins Publishing: 5.7
+* Simon and Schuster: 5.9
+* HarperCollins Publishers: 6.3
+* Hachette Book: 6.4
+* Random House: 7.3
+* Penguin Group: 8.6
 ### Description
 The `avg_price_publisher` file contains a SQL query that calculates the average sales price of books for each publisher, rounds the result to two decimal places, and sorts the results in ascending order by average price.
 
