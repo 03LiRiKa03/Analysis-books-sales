@@ -51,6 +51,9 @@ The `top_authors_units_sold.sql` file retrieves the top 5 authors by the total n
 ### Description
 The `publisher_genre_revenue.sql` file retrieves the total revenue of publishers across different genres. The genre column contains values like "genre fiction" and "fiction," which are identical. To address this issue, the code removes the "genre" part. The revenue is rounded for improved readability. The results are grouped by publisher and cleaned_genre, and then sorted by publisher and cleaned_genre. 
 
+ ## 8. Comparison of average book prices between different publishers.
+### Description
+The `avg_price_publisher` file contains a SQL query that calculates the average sales price of books for each publisher, rounds the result to two decimal places, and sorts the results in ascending order by average price.
 
 
 
