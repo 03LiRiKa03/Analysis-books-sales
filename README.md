@@ -1,7 +1,7 @@
  ## 1. Which publishers have released the most books?
 * Amazon Digital: A publisher that has significantly impacted the market by releasing many books.
 ### Description
-The `top_publisher.sql` file contains an SQL query designed to analyze the number of books released by each publisher in the dataset. The query counts the total number of book titles associated with each publisher and orders the results in descending order based on the count.
+[The top_publisher.sql](top_publisher.sql) file contains an SQL query designed to analyze the number of books released by each publisher in the dataset. The query counts the total number of book titles associated with each publisher and orders the results in descending order based on the count.
 
  ## 2. In which years were the most books published?
  * The most books were published in 2012 (68 books), followed by 2011 (55) and 2009 (46) years.
@@ -65,7 +65,7 @@ The `avg_price_publisher` file contains a SQL query that calculates the average 
  ## 9. How is the book rating correlated with its sales position?
 * Correlation between book ratings and sales rank: -0.02021720566106124
 ### Description
-The `corr.py` file imports the necessary libraries for analysis and establishes a connection to the database via db_connection. It includes a condition to check whether the data retrieval was successful. The script then calculates the correlation and visualizes the results.
+The `corr.py` file imports the necessary libraries for analysis and establishes a connection to the database via `db_connection`. It includes a condition to check whether the data retrieval was successful. The script then calculates the correlation and visualizes the results.
 
 
   
